@@ -25,7 +25,7 @@ void XLMaxSonarEZ::trigger() {
 
 float XLMaxSonarEZ::read() {
 	//Read the sensor and convert to a unit of length
-	distance = analogRead(tx) * Sonar::TO_CM;
+	distance = analogRead(tx) * SONAR_TO_CM;
 
 	return distance;
 }

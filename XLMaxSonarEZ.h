@@ -26,6 +26,12 @@
 #define UNUSED 255
 #endif
 
+/*
+	Constants to convert the analog data to units of length
+*/
+
+const float SONAR_TO_CM = 100.0 / 95.0;
+
 namespace Sonar {
 	/*
 		All operation modes defined on the datasheet.
@@ -48,12 +54,6 @@ namespace Sonar {
 		SIMULTANEOUS,
 		SINGLE
 	};
-
-	/*
-		Constants to convert the analog data to units of length
-	*/
-
-	const float TO_CM = 100.0 / 95.0;
 };
 
 class XLMaxSonarEZ {
