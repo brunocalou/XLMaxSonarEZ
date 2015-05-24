@@ -44,11 +44,6 @@ Library to read the XLMaxSonarEZ sensor on Arduino.
   - `SINGLE`: There is a RX pin for each individual sensor. They are triggered
   before reading.
 
-* Constants to convert the analog data to units of length.
-
-  *  `const float TO_CM` - Convert to centimeter.
-
-  
 ###`SonarList` class
 
 *  `SonarList(Sonar::OperationMode operation_mode)` - Constructor.
@@ -65,3 +60,8 @@ triggered (unless the operation mode is setted to Single).
 *  **private** `Sonar::OperationMode operation_mode` - Current operation mode.
 
 *  **private** `bool is_loop_started` - Holds if the loop has started on the chain loop mode.
+
+###`Constants`
+
+*  `const float SONAR_TO_CM` - Convert to centimeter.
+*  `int UNUSED` - Represents an unused pin.
