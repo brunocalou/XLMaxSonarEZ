@@ -41,7 +41,7 @@ Library to read the XLMaxSonarEZ sensor on Arduino.
   number of subsequent readings.
   - `SIMULTANEOUS`: All the sensors use the same RX pin and are triggered at
   the same time.
-  -`SINGLE`: There is a RX pin for each individual sensor. They are triggered
+  - `SINGLE`: There is a RX pin for each individual sensor. They are triggered
   before reading.
 
 * Constants to convert the analog data to units of length.
