@@ -6,6 +6,7 @@
 */
 
 #include "sonarlist.h"
+#include "LinkedList.h"
 
 #define RX 9	//Trigger pin
 #define TX A0 	//Read pin

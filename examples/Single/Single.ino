@@ -6,6 +6,8 @@
 */
 
 #include "XLMaxSonarEZ.h"
+#include "LinkedList.h"
+
 
 #define RX 9	//Trigger pin
 #define TX A0 	//Read pin
@@ -22,7 +24,7 @@ void loop(){
 	sonar.trigger();
 
 	//Print the read value
-	Serial.print(sonar.read());
+	Serial.println(sonar.read());
 
 	//Delay just to give us time to read the data on the serial monitor
 	delay(300);
