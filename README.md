@@ -2,7 +2,7 @@
 Library to read the XLMaxSonarEZ sensor on Arduino.
 
 ------------------------
-##Installation
+## Installation
 1. Install the linked list library from https://github.com/ivanseidel/LinkedList
 2. [Download](https://github.com/brunocalou/XLMaxSonarEZ/archive/master.zip) the latest release from github
 3. Unzip and rename the folder to "XLMaxSonarEZ" (remove the -master)
@@ -10,9 +10,9 @@ Library to read the XLMaxSonarEZ sensor on Arduino.
 5. Reopen the Arduino IDE
 
 ------------------------
-##Library Reference
+## Library Reference
 
-###`XLMaxSonarEZ` class
+### `XLMaxSonarEZ` class
 
 *  `XLMaxSonarEZ(byte tx, byte rx = UNUSED)` - Constructor.
 
@@ -33,7 +33,7 @@ Library to read the XLMaxSonarEZ sensor on Arduino.
 
 *  **private** `float distance` - The last distance measured.
 
-###`Sonar` namespace
+### `Sonar` namespace
 
 *  `enum OperationMode` - All operation modes defined on the datasheet.
   - `CHAIN`: First sensor is triggered before reading.
@@ -44,7 +44,7 @@ Library to read the XLMaxSonarEZ sensor on Arduino.
   - `SINGLE`: There is a RX pin for each individual sensor. They are triggered
   before reading.
 
-###`SonarList` class
+### `SonarList` class
 
 *  `SonarList(Sonar::OperationMode operation_mode)` - Constructor.
 
