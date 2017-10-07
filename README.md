@@ -61,7 +61,7 @@ triggered (unless the operation mode is setted to Single).
 
 *  **private** `bool is_loop_started` - Holds if the loop has started on the chain loop mode.
 
-###`Constants`
+### `Constants`
 
 *  `const float SONAR_TO_CM` - Convert to centimeter.
 *  `int UNUSED` - Represents an unused pin.
